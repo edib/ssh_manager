@@ -1,6 +1,7 @@
 # Import the necessary packages
 from consolemenu import *
 from consolemenu.items import *
+import getpass
 from ansible_vault import Vault
 import csv, os
 
@@ -28,9 +29,9 @@ if not os.path.exists(data_file):
 def main():
     # Create the menu
     menu = ConsoleMenu("SSH Menu")
-
-    vault = Vault(input("Enter Vault Password: "))
-    data = vault.load_raw(open(data_file).read())
+    
+    vault = Vault(getpass.getpass("Enter Vault Password: "))
+    data = vault.load_raw(open( data_file).read())
     data = data.decode('utf-8')
     data = data.splitlines()
 

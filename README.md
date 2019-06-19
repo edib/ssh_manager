@@ -3,13 +3,15 @@
 
 A simple Python menu-based ssh manager system integrated with ansible-vault.
 
+Note: This script only works in local terminal.
+
 ## Installation
 * Python 3.x
-* Python consolemenu
+* Python console-menu
 * Python ansible_vault
 
 ```
-pip3 install consolemenu ansible_vault
+pip3 install console-menu ansible_vault
 
 # install ansible for ubuntu
 apt install ansible
