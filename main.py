@@ -5,8 +5,7 @@ from ansible_vault import Vault
 import csv, os
 
 __author__ = "ibrahim edib kokdemir"
-__copyleft__ = "yes"
-__license__ = "none"
+__license__ = "MIT"
 __version__ = "0.1.0"
 __maintainer__ = "ibrahim edib kokdemir"
 __email__ = "kokdemir@gmail.com"
